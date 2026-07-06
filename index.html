@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Rakan's portfolio — web, software, and Roblox developer working with JavaScript, React, Node.js, TailwindCSS, LuaU, Python, and C++." />
+  <meta name="theme-color" content="#17151a" />
+
+  <meta property="og:title" content="Rakan — Portfolio" />
+  <meta property="og:description" content="Creative portfolio for Rakan, a web, software, and Roblox developer." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/gorillaz-bg.png" />
+
+  <title>Rakan — Portfolio</title>
+  <link rel="preload" as="image" href="img/gorillaz-bg.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-light" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+  <section class="entry" id="entry" aria-label="Site entry">
+    <div class="entry-bg" aria-hidden="true"></div>
+    <div class="entry-card reveal-now">
+      <p class="typing-line" aria-live="polite">
+        <span id="typingWord">rakan</span><span class="typing-caret" aria-hidden="true"></span>
+      </p>
+      <h1>Portfolio</h1>
+      <button class="enter-button magnetic" id="enterButton" type="button" aria-label="Play and enter portfolio">
+        <span class="play-icon" aria-hidden="true"></span>
+        <span>Join</span>
+      </button>
+    </div>
+  </section>
+
+  <header class="site-header" aria-label="Primary navigation">
+    <a class="brand" href="#hero" aria-label="Go to top">rakan</a>
+    <nav class="nav-links" aria-label="Portfolio sections">
+      <a href="#knowledge">Knowledge</a>
+      <a href="#formation">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="audio-toggle magnetic" id="audioToggle" type="button" aria-label="Toggle music" aria-pressed="false">
+      <span class="audio-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="audio-label">Audio</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="hero section-panel" id="hero" data-section="hero">
+      <div class="hero-bg-card" aria-hidden="true">
+        <img src="img/gorillaz-bg.png" alt="" />
+      </div>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Web • Software • Game Developing</p>
+        <h2>Rakan</h2>
+        <p class="hero-description">
+          Full-stack developer with 5 years of experience building web applications, software tools, and interactive systems. 
+          Software Engineering student and Computer Technician, working with front-end, back-end, game development, automation, and local tools.
+        </p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary magnetic" href="#projects">Projects</a>
+          <a class="button ghost magnetic" href="#contact">Contact me</a>
+        </div>
+      </div>
+
+      <aside class="identity-card reveal" aria-label="Profile overview">
+        <div class="photo-frame">
+          <img src="img/profile-placeholder.png" alt="Portrait of Rakan" />
+          <span class="photo-ring" aria-hidden="true"></span>
+        </div>
+        <div>
+          <p class="card-kicker">Overview</p>
+          <h3>About me</h3>
+        </div>
+        <ul class="micro-list" aria-label="Technical highlights">
+          <li><span>Accessibility</span><strong>ARIA</strong></li>
+          <li><span>Security</span><strong>Structured approach</strong></li>
+          <li><span>Stack</span><strong>FullStack</strong></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section-panel knowledge" id="knowledge" data-section="knowledge">
+      <div class="section-title reveal">
+        <p class="eyebrow">Knowledge</p>
+        <h2>Tools & Knowledge</h2>
+        <p>
+          Hover, tap, or focus a tile to inspect the stack. Each card highlights a different part of the workflow.
+        </p>
+      </div>
+
+      <div class="knowledge-layout">
+        <div class="skill-stage reveal" id="skillStage" aria-live="polite">
+          <span class="skill-orbit" aria-hidden="true"></span>
+          <div class="active-skill-icon" id="activeSkillIcon" aria-hidden="true">
+            <i class="devicon-javascript-plain"></i>
+          </div>
+          <p class="card-kicker">Selected</p>
+          <h3 id="activeSkill">JavaScript</h3>
+          <p id="activeSkillText">Frontend interactions, logic, and dynamic behavior.</p>
+        </div>
+
+        <div class="skill-grid reveal" role="list" aria-label="Knowledge list">
+          <button type="button" class="skill active" data-title="JavaScript" data-icon="javascript" data-text="Frontend interactions, logic, and dynamic behavior."><span class="skill-icon" aria-hidden="true"><i class="devicon-javascript-plain"></i></span><span class="skill-label">JavaScript</span></button>
+          <button type="button" class="skill" data-title="HTML" data-icon="html" data-text="Semantic structure, solid SEO foundations, and accessible markup."><span class="skill-icon" aria-hidden="true"><i class="devicon-html5-plain"></i></span><span class="skill-label">HTML</span></button>
+          <button type="button" class="skill" data-title="CSS" data-icon="css" data-text="Layouts, animation systems, responsive design, and visual identity."><span class="skill-icon" aria-hidden="true"><i class="devicon-css3-plain"></i></span><span class="skill-label">CSS</span></button>
+          <button type="button" class="skill" data-title="TailwindCSS" data-icon="tailwind" data-text="Fast, consistent, and scalable design systems."><span class="skill-icon" aria-hidden="true"><i class="devicon-tailwindcss-original"></i></span><span class="skill-label">TailwindCSS</span></button>
+          <button type="button" class="skill" data-title="NodeJS" data-icon="node" data-text="Back-end services, APIs, automation, and integrations."><span class="skill-icon" aria-hidden="true"><i class="devicon-nodejs-plain"></i></span><span class="skill-label">NodeJS</span></button>
+          <button type="button" class="skill" data-title="LuaU" data-icon="luau" data-text="Gameplay systems, UI flows, and Roblox development logic."><span class="skill-icon custom-skill-icon" aria-hidden="true">Lu</span><span class="skill-label">LuaU</span></button>
+          <button type="button" class="skill" data-title="C++" data-icon="cplusplus" data-text="Strong foundations in logic, performance, and software structure."><span class="skill-icon" aria-hidden="true"><i class="devicon-cplusplus-plain"></i></span><span class="skill-label">C++</span></button>
+          <button type="button" class="skill" data-title="Vite" data-icon="vite" data-text="Modern build tooling with speed and a smooth development flow."><span class="skill-icon" aria-hidden="true"><i class="devicon-vitejs-plain"></i></span><span class="skill-label">Vite</span></button>
+          <button type="button" class="skill" data-title="React" data-icon="react" data-text="Components, state management, and scalable interfaces."><span class="skill-icon" aria-hidden="true"><i class="devicon-react-original"></i></span><span class="skill-label">React</span></button>
+          <button type="button" class="skill" data-title="Python" data-icon="python" data-text="Automation, local AI tools, scripts, and practical utilities."><span class="skill-icon" aria-hidden="true"><i class="devicon-python-plain"></i></span><span class="skill-label">Python</span></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-panel formation" id="formation" data-section="formation">
+      <div class="section-title reveal">
+        <p class="eyebrow">Education</p>
+        <h2>Technical foundation and engineering.</h2>
+      </div>
+
+      <div class="timeline" aria-label="Academic background">
+        <article class="timeline-item reveal">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <p class="card-kicker">IFMS</p>
+          <h3>Info Tech</h3>
+          <p>Technical education focused on development, logic, networking, and core computing fundamentals.</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <br>
+          <p class="card-kicker">UNIGRAN</p>
+          <h3>Software Engineering</h3>
+          <p>Engineering education centered on architecture, quality, processes, systems, and professional software development.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-panel projects" id="projects" data-section="projects">
+      <div class="section-title reveal">
+        <p class="eyebrow">Projects</p>
+        <h2>Samples.</h2>
+      </div>
+
+      <div class="project-grid">
+        <a class="project-card reveal" href="#contact" aria-label="Rako AI project">
+          <img src="img/rako-ai.png" alt="Rako AI project artwork" />
+          <span class="project-glow" aria-hidden="true"></span>
+          <span class="project-info">
+            <small>Python • Local AI</small>
+            <strong>Rako AI</strong>
+          </span>
+        </a>
+
+        <a class="project-card reveal" href="#contact" aria-label="Lost Luggages project">
+          <img src="img/lost-luggages.png" alt="Lost Luggages project artwork" />
+          <span class="project-glow" aria-hidden="true"></span>
+          <span class="project-info">
+            <small>Roblox • LuaU</small>
+            <strong>Lost Luggages</strong>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-panel contact" id="contact" data-section="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s build something.</h2>
+        <p>
+          My main contact is Discord. Click below to copy the username.
+        </p>
+
+        <button class="discord-copy magnetic" id="copyDiscord" type="button">
+          <span>Discord</span>
+          <strong>ufgg</strong>
+          <em id="copyStatus" aria-live="polite">Copy</em>
+        </button>
+
+        <div class="contact-notes" aria-label="Contact notes">
+          <span>Freelance</span>
+          <span>Web apps</span>
+          <span>Roblox systems</span>
+          <span>Local tools</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Rakan.</p>
+  </footer>
+
+  <audio id="bgMusic" src="sounds/and-i-love-her.mp3" loop preload="none"></audio>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
